@@ -1,0 +1,29 @@
+%p#notice= notice
+
+%p
+  %b Category:
+  = @shirt.category
+%p
+  %b Name:
+  = @shirt.name
+%p
+  %b Description:
+  = @shirt.description
+%p
+  %b Brand:
+  = @shirt.brand
+%p
+  %b Sex:
+  = @shirt.sex
+%p
+  %b Size fit:
+  = @shirt.size_fit
+%p
+  %b Pricing:
+  = @shirt.pricing
+%p
+  Speed :
+  = rating_for @shirt, "satisfaction", star: 7
+= link_to 'Edit', edit_shirt_path(@shirt)
+|
+= link_to 'Back', shirts_path

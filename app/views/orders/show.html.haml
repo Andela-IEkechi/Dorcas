@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Shirt:
+  = @order.shirt
+%p
+  %b User:
+  = @order.user
+%p
+  %b Payment method:
+  = @order.payment_method
+
+= link_to 'Edit', edit_order_path(@order)
+\|
+= link_to 'Back', orders_path
