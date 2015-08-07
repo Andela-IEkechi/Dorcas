@@ -1,3 +1,39 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.categories {
+  background-color: #F0F0F0;
+  text-align: center;
+}
+
+.categories img {
+  height: 250px;
+  width: 200px;
+}
+
+.promotion {
+  height: 500px;
+  background-image: url("promo-girl.jpg");
+  background-size: cover;
+}
+
+.promotion_text {
+  color: white;
+  text-align: center;
+}
+
+.footer1 {
+  background-color: darkseagreen;
+  height: 150px;
+}
+
+.footer2 {
+  background-color: black;
+  height: 345px;
+  color: white;
+}
+
+.categoryHeading {
+  text-align: center;
+  font-size: 22px;
+}
