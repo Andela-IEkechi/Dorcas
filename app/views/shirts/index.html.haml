@@ -1,33 +1,53 @@
-%h1 Listing shirts
+=render 'side_bar'
 
-%table
-  %thead
-    %tr
-      %th Category
-      %th Name
-      %th Description
-      %th Brand
-      %th Sex
-      %th Size fit
-      %th Pricing
-      %th
-      %th
-      %th
-
-  %tbody
-    - @shirts.each do |shirt|
-      %tr
-        %td= shirt.category
-        %td= shirt.name
-        %td= shirt.description
-        %td= shirt.brand
-        %td= shirt.sex
-        %td= shirt.size_fit
-        %td= shirt.pricing
-        %td= link_to 'Show', shirt
-        %td= link_to 'Edit', edit_shirt_path(shirt)
-        %td= link_to 'Destroy', shirt, :method => :delete, :data => { :confirm => 'Are you sure?' }
-
-%br
-
-= link_to 'New Shirt', new_shirt_path
+.col.s8
+  .row
+    = image_tag("banner.png", alt: "A Fine Shirt")
+  .row
+    Shirts
+    .right-align dsdjkdskjsd
+  .row
+    %ul
+      .row
+        - @shirts.each do |shirt|
+          %li
+            = link_to shirt do
+              .col.s4
+                .row.categories
+                  = image_tag("tshirt.png", alt: "A Fine Shirt")
+                .row
+                  = shirt.name
+                  = shirt.description
+-#%h1 Listing shirts
+-#
+-#%table
+-#  %thead
+-#    %tr
+-#      %th Category
+-#      %th Name
+-#      %th Description
+-#      %th Brand
+-#      %th Sex
+-#      %th Size fit
+-#      %th Pricing
+-#      %th
+-#      %th
+-#      %th
+-#
+-#  %tbody
+-#    - @shirts.each do |shirt|
+-#      %tr
+-#        %td= shirt.category
+-#        %td= shirt.name
+-#        %td= shirt.description
+-#        %td= shirt.brand
+-#        %td= shirt.sex
+-#        %td= shirt.size_fit
+-#        %td= shirt.pricing
+-#        %td= link_to 'Show', shirt
+-#        %td= link_to 'Edit', edit_shirt_path(shirt)
+-#        %td= link_to 'Destroy', shirt, :method => :delete, :data => { :confirm => 'Are you sure?' }
+-#
+-#%br
+-#
+-#= link_to 'New Shirt', new_shirt_path

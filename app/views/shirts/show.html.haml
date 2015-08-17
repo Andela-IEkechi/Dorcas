@@ -1,29 +1,138 @@
-%p#notice= notice
+-#%p#notice= notice
+-#
+-#%p
+-#  %b Category:
+-#  = @shirt.category
+-#%p
+-#  %b Name:
+-#  = @shirt.name
+-#%p
+-#  %b Description:
+-#  = @shirt.description
+-#%p
+-#  %b Brand:
+-#  = @shirt.brand
+-#%p
+-#  %b Sex:
+-#  = @shirt.sex
+-#%p
+-#  %b Size fit:
+-#  = @shirt.size_fit
+-#%p
+-#  %b Pricing:
+-#  = @shirt.pricing
+-#%p
+-#  Speed :
+-#  = rating_for @shirt, "satisfaction", star: 7
+-#= link_to 'Edit', edit_shirt_path(@shirt)
+-#|
+-#= link_to 'Back', shirts_path
 
-%p
-  %b Category:
-  = @shirt.category
-%p
-  %b Name:
-  = @shirt.name
-%p
-  %b Description:
-  = @shirt.description
-%p
-  %b Brand:
-  = @shirt.brand
-%p
-  %b Sex:
-  = @shirt.sex
-%p
-  %b Size fit:
-  = @shirt.size_fit
-%p
-  %b Pricing:
-  = @shirt.pricing
-%p
-  Speed :
-  = rating_for @shirt, "satisfaction", star: 7
-= link_to 'Edit', edit_shirt_path(@shirt)
-|
-= link_to 'Back', shirts_path
+.container
+  .row
+    .col.s6.shirt_display
+      = image_tag("tshirt.png", alt: "A Fine Shirt")
+    .col.s6
+      .row
+        .col.s12
+          %ul
+            %li
+              Stock: Number in stock
+            %li
+              Type: Type
+            %li
+              Brand: Brand
+            %li
+              Color: Blue
+            %li
+              Size: Small
+            %li
+              Price: 10,000
+        .row
+          .col.s6
+            Quantity:
+            %input{type: "number"}
+          .col.s6
+            %ul#slide-out.side-nav
+              %li
+                %h4 Your cart
+              %li
+                .row
+                  .col.s6
+                    = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+                  .col.s6 Details
+                  %br
+                    %br
+                      Name - S/Black
+                      Quantitiy - Price
+                .row
+                  .col.s6
+                    = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+                  .col.s6 Details
+                  %br
+                    %br
+                      Name - S/Black
+                      Quantitiy - Price
+                .row
+                  .col.s6
+                    = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+                  .col.s6 Details
+                  %br
+                    %br
+                      Name - S/Black
+                      Quantitiy - Price
+              %li
+                .row
+                  checkout
+                  cart
+            %a.button-collapse.show-on-large{"data-activates" => "slide-out", :href => "#"}
+              Add to cart
+      .row
+        .col.s12
+          %ul.collapsible{"data-collapsible" => "accordion"}
+            %li
+              .collapsible-header.active
+                Description
+              .collapsible-body
+                %p fsdkfjdskf sdlkjfsa asklf
+            %li
+              .collapsible-header
+                size chart
+              .collapsible-body
+                %p Lorem ipsum dolor sit amet.
+            %li
+              .collapsible-header
+                Reviews
+              .collapsible-body
+                %p Lorem ipsum dolor sit amet.
+            %li
+              .collapsible-header
+                Shipping and return policies
+              .collapsible-body
+                %p Lorem ipsum dolor sit amet.
+      .row
+        .col.s12
+          share this product. fb-icon twitter etc
+  .row
+    .col.s5
+      %hr
+    .col.s2.categoryHeading BESTSELLERS
+    .col.s5
+      %hr
+  .row
+    .col.s3
+      .categories
+        = image_tag("tshirt.png", alt: "A Fine Shirt")
+      sdkjfdjkd
+    .col.s3
+      .categories
+        = image_tag("tshirt.png", alt: "A Fine Shirt")
+      dkjfdjkd
+    .col.s3
+      .categories
+        = image_tag("tshirt.png", alt: "A Fine Shirt")
+      sdkjfdjkd
+    .col.s3
+      .categories
+        = image_tag("tshirt.png", alt: "A Fine Shirt")
+      sdkjfdjkd

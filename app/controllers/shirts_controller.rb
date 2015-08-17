@@ -61,6 +61,20 @@ class ShirtsController < ApplicationController
     end
   end
 
+  def women
+    # binding.pry
+    @shirts = Shirt.where(sex: "Female")
+
+  end
+
+  def men_category
+    @shirts = Shirt.where(sex: "men")
+  end
+
+  def unisex_category
+    @shirts = Shirt.where(sex: "unisex")
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_shirt

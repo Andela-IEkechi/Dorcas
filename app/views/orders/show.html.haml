@@ -1,15 +1,68 @@
-%p#notice= notice
+-#%p#notice= notice
+-#
+-#%p
+-#  %b Shirt:
+-#  = @order.shirt
+-#%p
+-#  %b User:
+-#  = @order.user
+-#%p
+-#  %b Payment method:
+-#  = @order.payment_method
+-#
+-#= link_to 'Edit', edit_order_path(@order)
+-#\|
+-#= link_to 'Back', orders_path
+.container
+  .row
+    %h4 Your cart
+  .row
+    .col.s8
+      .row.cart_header Items
+      .row
+        .col.s2
+          = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+        .col.s6.offset-s1
+          %br
+            Brand - S/Black
+            %br
+              Price - 10,00
+            %br
+              %div.item_number
+                %input{placehoder: "placeholder", id:"first_name", type:"text", class:"validate", style:"border:none", value:"1"}
+      .row
+        .col.s2
+          = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+        .col.s6.offset-s1
+          %br
+            Brand - S/Black
+            %br
+              Price - 10,00
+            %br
+              %div.item_number
+                %input{placehoder: "placeholder", id:"first_name", type:"text", class:"validate", style:"border:none", value:"1"}
+      .row
+        .col.s2
+          = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+        .col.s6.offset-s1
+          %br
+            Brand - S/Black
+            %br
+              Price - 10,00
+            %br
+              %div.item_number
+                %input{placehoder: "placeholder", id:"first_name", type:"text", class:"validate", style:"border:none", value:"1"}
 
-%p
-  %b Shirt:
-  = @order.shirt
-%p
-  %b User:
-  = @order.user
-%p
-  %b Payment method:
-  = @order.payment_method
-
-= link_to 'Edit', edit_order_path(@order)
-\|
-= link_to 'Back', orders_path
+    .col.s4
+      .row.cart_header Total
+      .row
+        %h4 10,00000
+      .row
+        SPECIAL INSTRUCTIONS FOR SELLER:
+        %br
+          .input-field
+            %textarea.materialize-textarea{placehoder: "placeholder", id:"first_name", type:"text", class:"validate"}
+            %label{for: "first_name"} Expain here...
+        %br
+          = link_to "#" do
+            .waves-effect.waves-light.btn Secure checkout

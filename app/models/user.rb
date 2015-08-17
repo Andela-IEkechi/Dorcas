@@ -31,6 +31,7 @@ class User < ActiveRecord::Base
             uid: access_token.uid,
             password: Devise.friendly_token[0, 20],
         )
+        # binding.pry
       end
     end
   end

@@ -2,7 +2,7 @@ class CreateOrders < ActiveRecord::Migration
   def change
     create_table :orders do |t|
       t.references :shirt, index: true
-      t.references :user, index: true
+      t.references :users, index: true
       t.string :payment_method
 
       t.timestamps null: false

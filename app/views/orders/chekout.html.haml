@@ -1,0 +1,101 @@
+.row.checkout_header
+.container
+  .col.s6
+    .row
+      %h5 Customer Information
+      .input-field
+        %input{placehoder: "placeholder", id:"first_name", type:"text", class:"validate"}
+        %label{for: "first_name"} Email
+      Already have an account with us?
+      = link_to "log in","#"
+    .row
+      %h5 Shipping Address
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label First name
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label Last name
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label Company
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label Address
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label City
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label State
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label Country
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label Postal Code
+      .input-field
+        %input{type:"text", class:"validate"}
+        %label Phone number
+    .row
+      %input{type: "checkbox", id:"save_info"}
+      %label{for: "save_info"} Save this information for faster checkout next time
+      = link_to "#" do
+        .waves-effect.waves-light.btn Continue
+  .col.s5.offset-s1.summary
+    .row.summary_bottom
+      %h5 Order Summary
+    .row
+      .col.s3
+        = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+      .col.s6
+        Name * quantity
+        %br
+          S/Black
+        %h6{class:"right-align"} $149.99
+    %hr
+      %div
+        .row
+          .col.s3
+            = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+          .col.s6
+            Name * quantity
+            %br
+              S/Black
+            %h6{class:"right-align"} $149.99
+        %hr
+        .row
+          .col.s3
+            = image_tag("tshirt.png", alt: "A Fine Shirt", class: "cart_image")
+          .col.s6
+            Name * quantity
+            %br
+              S/Black
+            %h6{class:"right-align"} $149.99
+        %hr
+    .row
+      .col.s6
+        Subtotal
+      .col.s3.right-align
+        $484328
+    .row
+      .col.s6
+        Subtotal
+      .col.s3.right-align
+        $484328
+    .row
+      .col.s6
+        Subtotal
+      .col.s3.right-align
+        $484328
+    %hr
+    .row.summary_bottom
+      .col.s6
+        Total
+      .col.s3.right-align
+        $484328
+    .row
+      .col.s6
+        Payment Due
+      .col.s3.right-align
+        $484328

@@ -1,6 +1,16 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@mixin animate {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+$dark_blue: #1F5F89;
+
 .categories {
   img {
     height: 250px;
@@ -35,4 +45,17 @@
 .categoryHeading {
   text-align: center;
   font-size: 22px;
+}
+
+.scroll-bg {
+  .brand-logo {
+    color: white;
+  }
+  border-bottom: 1px solid rgba(31, 95, 137, 0.65);
+  background-color: #151515;
+  position: fixed;
+  & .navbar-nav > li > a {
+    color: $dark_blue;
+    text-shadow: none;
+  }
 }

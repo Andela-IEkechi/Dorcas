@@ -1,0 +1,20 @@
+=render 'side_bar'
+
+.col.s8
+  .row
+    = image_tag("banner.png", alt: "A Fine Shirt")
+  .row
+    Shirts
+    .right-align dsdjkdskjsd
+  .row
+    %ul
+      .row
+        - @shirts.each do |shirt|
+          %li
+            = link_to shirt do
+              .col.s4
+                .row.categories
+                  = image_tag("tshirt.png", alt: "A Fine Shirt")
+                .row
+                  = shirt.name
+                  \: #{shirt.category}

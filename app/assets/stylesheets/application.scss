@@ -16,3 +16,14 @@
 
 @import "materialize";
 @import url("http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext");
+
+nav {
+  .brand-logo {
+    color: black;
+  }
+  background-color: transparent;
+}
+
+select {
+  display: block;
+}

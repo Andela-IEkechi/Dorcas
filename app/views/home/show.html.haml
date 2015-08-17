@@ -28,14 +28,19 @@
 .row
   .col.s10.offset-s1
     .row
+      %div
+        = link_to shirts_women_path do
+          .col.s4
+            .row.col.s12.categories
+              women
+              = image_tag("tshirt.png", alt: "A Fine Shirt")
       .col.s4
         .row.col.s12.categories
-          = image_tag("tshirt.png", alt: "A Fine Shirt")
-      .col.s4
-        .row.col.s12.categories
+          men
           = image_tag("shirt.png", alt: "A Fine Shirt")
       .col.s4
         .row.col.s12.categories
+          unisex
           = image_tag("tshirt.png", alt: "A Fine Shirt")
     .row
       .col.s5

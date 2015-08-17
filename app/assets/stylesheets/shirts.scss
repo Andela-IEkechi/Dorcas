@@ -1,3 +1,16 @@
 // Place all the styles related to the Shirts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.shirt_display {
+  height: 708px;
+  background-color: #F0F0F0;
+  text-align: center;
+  img {
+    width: 400px;
+    height: 600px;
+  }
+}
+.cart_image {
+  width: 75px;
+  height: 96px;
+}

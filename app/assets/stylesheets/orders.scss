@@ -1,3 +1,29 @@
 // Place all the styles related to the Orders controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.cart_header {
+  background-color: #F5F5F5;
+  height: 30px;
+}
+.item_number {
+  input {
+    border: none;
+    box-shadow: 0 0;
+    text-align: center;
+  }
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+}
+.checkout_header {
+  height: 200px;
+  background-image: url("checkout_header_image.jpg");
+  background-size: cover;
+}
+.summary {
+  background-color: #FAFAFA;
+}
+
+.summary_bottom {
+  border-bottom: 1px solid black;
+}
